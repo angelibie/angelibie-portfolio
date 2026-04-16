@@ -1,33 +1,196 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Angelibie Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angel Ibie's Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f8f6ff, #eef4ff);
+      color: #222;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #6a5cff, #8f7cff);
+      color: white;
+      padding: 50px 35px;
+      border-radius: 24px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+      margin-bottom: 30px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    .badge-row {
+      margin-top: 20px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.25);
+      padding: 8px 14px;
+      border-radius: 999px;
+      margin: 6px 8px 0 0;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .card h2 {
+      margin-bottom: 14px;
+      color: #5a4ee6;
+      font-size: 1.4rem;
+    }
+
+    .card p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .project {
+      background: #f7f8ff;
+      border-left: 5px solid #6a5cff;
+      padding: 14px 16px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+    }
+
+    .contact a {
+      color: #5a4ee6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 25px 0 10px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      .hero {
+        padding: 35px 22px;
+      }
+
+      .card {
+        padding: 22px;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial; margin: 40px;">
+<body>
+  <div class="container">
 
-    <h1>Angelibie</h1>
-    <p><strong>Student Portfolio</strong></p>
+    <section class="hero">
+      <h1>Angel Ibie</h1>
+      <p>
+        My Student Portfolio — a simple website showing my technical skills.
+      </p>
 
-    <h2>About Me</h2>
-    <p>I am a student interested in data, technology, and problem solving. This is my personal portfolio webpage.</p>
+      <div class="badge-row">
+        <span class="badge">Python</span>
+        <span class="badge">Data Analysis</span>
+        <span class="badge">GitHub</span>
+        <span class="badge">Problem Solving</span>
+      </div>
+    </section>
 
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>Data Analysis</li>
-        <li>GitHub</li>
-        <li>Problem Solving</li>
-    </ul>
+    <section class="grid">
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          I am a student interested in problem solving.
+          This portfolio webpage introduces who I am, the skills I am building,
+          and some of the work I have explored so far.
+        </p>
+        <p>
+          I am developing confidence in digital tools and learning how to present
+          my work in a clear and professional way.
+        </p>
+      </div>
 
-    <h2>Projects</h2>
-    <ul>
-        <li>Portfolio Website (this project)</li>
-        <li>Data Analysis Project</li>
-    </ul>
+      <div class="card">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python programming</li>
+          <li>Data analysis and interpretation</li>
+          <li>GitHub and version control</li>
+          <li>Communication and presentation</li>
+          <li>Problem solving</li>
+        </ul>
+      </div>
 
-    <h2>Contact</h2>
-    <p>Email: angel.ibie@bayes.city.ac.uk</p>
+      <div class="card">
+        <h2>Projects</h2>
 
+        <div class="project">
+          <strong>Portfolio Website</strong>
+          <p>This project involved building and publishing my own portfolio webpage using HTML and GitHub Pages.</p>
+        </div>
+
+        <div class="project">
+          <strong>Data Analysis Project</strong>
+          <p>A simple project focused on exploring data and identifying patterns.</p>
+        </div>
+      </div>
+
+      <div class="card contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:angel.ibie@bayes.city.ac.uk">angel.ibie@bayes.city.ac.uk</a></p>
+        <p>GitHub: <a href="https://github.com/angelibie" target="_blank">github.com/angelibie</a></p>
+      </div>
+    </section>
+
+    <div class="footer">
+      © 2026 AngelIbie Portfolio
+    </div>
+
+  </div>
 </body>
 </html>
